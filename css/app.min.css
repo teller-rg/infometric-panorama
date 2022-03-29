@@ -17548,6 +17548,19 @@ button:focus {
 .header-logo img {
   max-width: 314px;
 }
+.header-logo span:first-child {
+  color: #43a041;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  display: block;
+}
+.header-logo span:last-child {
+  color: #000;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 50px;
+}
 .menu-icon {
   display: inline-block;
   cursor: pointer;
