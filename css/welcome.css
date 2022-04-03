@@ -1,0 +1,130 @@
+.tab {
+  display: none;
+}
+.tab-img {
+  display: none;
+}
+.header-logo span:last-child {
+  font-weight: 300;
+}
+.modal .close {
+  position: absolute;
+  z-index: 1;
+  top: 16px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d8d8d8;
+  border-radius: 100%;
+  cursor: pointer !important;
+  opacity: 1;
+}
+.modal .close:hover {
+  background-color: #ff8f4a;
+  transition: 0.3s;
+}
+.modal .close span {
+  font-size: 30px;
+  color: #fff;
+}
+
+.modal-welcome .modal-body {
+  background-color: #e5efe6;
+  display: flex;
+  padding: unset;
+  border-radius: 10px;
+}
+.modal-welcome .modal-body--left {
+  padding: 81px 92px 48px 81px;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+.modal-welcome .modal-body--left .title--primary {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.modal-welcome .modal-body--left p {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 50px;
+}
+.modal-welcome .modal-body--left p a {
+  color: #347628;
+}
+
+.title--primary {
+  color: #43a041;
+}
+.modal-welcome .modal-body--right {
+  background-color: #fff;
+  border-radius: 0 10px 10px 0;
+  padding-top: 40px;
+  padding-bottom: 54px;
+  display: flex;
+  flex-direction: column;
+}
+.modal-welcome .modal-body--right span {
+  font-size: 18px;
+  color: #000;
+}
+.modal-welcome .modal-body--right img {
+  max-width: 430px;
+}
+.modal-welcome button {
+  border-radius: 22px;
+  color: #fff;
+  padding: unset;
+  width: 146px;
+  justify-content: center;
+}
+.modal-welcome .modal-content {
+  min-height: calc(100vh - 60px);
+}
+@media (min-width: 768px) {
+  .modal-welcome .modal-dialog {
+    max-width: calc(100vw - 255px);
+  }
+}
+.button--secondary {
+  background-color: #b2b2b2;
+  height: 43px;
+}
+.modal-welcome button:hover {
+  background-color: #ff7f00;
+  color: #fff;
+  transition: 0.3s;
+}
+@media (max-width: 1120px) {
+  .modal-welcome .modal-body {
+    flex-wrap: wrap;
+  }
+  .modal-welcome .modal-body > div {
+    width: 100%;
+  }
+  .tab-img {
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .modal .close {
+    width: 30px;
+    height: 30px;
+  }
+  .modal .close span {
+    font-size: 24px;
+  }
+  .modal-welcome .modal-body--left {
+    padding: 20px;
+  }
+  .modal-welcome .modal-body--left .title--primary {
+    font-size: 30px;
+  }
+  .modal-welcome .modal-body--left p {
+    font-size: 14px;
+  }
+}

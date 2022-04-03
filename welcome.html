@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Infometric Panorama</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/app.min.css" />
+    <link rel="stylesheet" href="css/welcome.css" />
+  </head>
+
+  <body id="body">
+    <div
+      id="welcomeModal"
+      class="modal modal-welcome"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body">
+            <div class="modal-body--left">
+              <div class="tab">
+                <h1 class="title--primary">
+                  Välkommen till Infometric Panorama!
+                </h1>
+                <p>
+                  Här kan du som förvaltare eller medlem i styrelsen för din BRF
+                  få en god översiktsbild av fastighetens förbrukning av el och
+                  vatten m m. Du kan ändra tariffer, få ut statistik och
+                  rapporter och hantera frågor från boende. Klicka dig vidare så
+                  får du mer information.
+                </p>
+              </div>
+              <div class="tab">
+                <h1 class="title--primary">Infoboxar</h1>
+                <p>
+                  Vi har gjort en ny personlig startsida med konfigurerbara
+                  Infoboxar. En Infobox visar viss utvald information.
+                  Inledningsvis visas två Infoboxar, två här till höger och den
+                  här som du läser i nu (du kan enkelt ta bort den sen). För att
+                  hantera Infoboxarna finns en ”Ändra”-penna till höger. För
+                  musen dit och välj ”Pennan” för att konfigurera de Infoboxar
+                  du redan har, eller välj ”Plus” för att lägga till nya
+                  Infoboxar. En del Infoboxar kan eller måste konfigureras för
+                  att fungera, t ex välja vilken grupp av mätare som skall visas
+                  eller färgen på Infoboxen. Konfiguration av en speciell
+                  Infobox gör du i ”Ändra”-läget genom att klicka på
+                  ”skiftnyckeln” uppe till höger i aktuell Infobox. När du är
+                  klar och har dragit Infoboxarna dit du vill ha dem, avsluta
+                  med att klicka på den blå ”Avbockningen” nere till höger.
+                </p>
+              </div>
+              <div class="tab">
+                <h1 class="title--primary">Översiktlig hantering</h1>
+                <p>
+                  Under de andra flikarna; Mätserier, Boende och Fastighet kan
+                  du få allt från en översiktlig bild av insamlade mätvärden
+                  till detaljerad information om en specifik mätare och dess
+                  insamlade mätvärden. Vill du se en översikt över alla
+                  mätvärden går du till ”Mätserier” där du kan sortera, filtrera
+                  de olika kolumnerna så att du får den information du vill ha.
+                  Uppe till höger visas en sammanställning. Det går även att
+                  göra egna grupper så att du snabbt kan få fram samma vy igen.
+                  Missa inte att du kan växla mellan att visa data som en tabell
+                  eller som ett diagram, använd den blå knappen uppe till
+                  vänster.
+                </p>
+              </div>
+              <div class="tab">
+                <h1 class="title--primary">Boende</h1>
+                <p>
+                  Har ditt projekt Panorama Home, vår lägenhetswebb, hanterar du
+                  information om de boende, lägenheter och eventuella
+                  laddplatser under fliken ”Boende”, till exempel
+                  inloggningsinformation och utskrift av individuella brev till
+                  varje boende. Söker du information om en speciell
+                  lägenhet/mätare kan du upp till höger söka efter den på den
+                  boendes namn, adressen eller lägenhetsnumret. När listan med
+                  resultat kommer och du hittat vad du söker klickar du längst
+                  till höger på diagrammet för att direkt få mätvärden för sökt
+                  mätare eller på pennan för att hantera den boende. Har ditt
+                  projekt abonnemang på Energiuppföljning kan du välja fliken
+                  ”Fastighet” för att se och konfigurera dina byggnaders
+                  energiprestanda och produktion.
+                </p>
+              </div>
+              <div class="tab">
+                <h1 class="title--primary">Lycka till!</h1>
+                <p>
+                  Hoppas du får nytta av Panorama! Har du ytterligare önskemål
+                  eller synpunkter på vad du skulle vilja ha på vår
+                  fastighetswebb är du välkommen att höra av dig till vår
+                  <a href="#">supportavdelning</a>.
+                </p>
+              </div>
+              <div class="header-logo mt-auto">
+                <span>Infometric</span>
+                <span>Panorama</span>
+              </div>
+            </div>
+            <div class="modal-body--right">
+              <div class="tab-img">
+                <img src="img/welcome/Welcome-ill-01.png" alt="" />
+              </div>
+              <div class="tab-img">
+                <img src="img/welcome/Welcome-ill-02.png" alt="" />
+              </div>
+              <div class="tab-img">
+                <img src="img/welcome/Welcome-ill-03.png" alt="" />
+              </div>
+              <div class="tab-img">
+                <img src="img/welcome/Welcome-ill-04.png" alt="" />
+              </div>
+              <div class="tab-img">
+                <img src="img/welcome/Welcome-ill-05.png" alt="" />
+              </div>
+              <div class="modal-body--right-footer mt-auto">
+                <p class="text-center">
+                  <span id="currentStep"></span>/<span id="allSteps"></span>
+                </p>
+                <div class="d-flex justify-content-center">
+                  <button
+                    class="button button--secondary mx-2"
+                    onclick="nextPrev(-1)"
+                    id="prevBtn"
+                  ></button>
+                  <button
+                    class="button button--primary mx-2"
+                    onclick="nextPrev(1)"
+                    id="nextBtn"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>
